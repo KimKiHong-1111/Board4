@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML 태그 종합 예제</title>
+</head>
+<body>
+<h2>1. 목록 태그</h2>
+<!-- 순서 없는 목록 -->
+<ul>
+  <li>사과</li>
+  <li>바나나</li>
+  <li>포도</li>
+</ul>
+
+<!-- 순서 있는 목록 -->
+<ol>
+  <li>첫 번째 단계</li>
+  <li>두 번째 단계</li>
+  <li>세 번째 단계</li>
+</ol>
+
+<h2>2. 폼 태그</h2>
+<form action="/submit" method="post">
+  <!-- input -->
+  이름: <input type="text" name="username"><br><br>
+
+  <!-- textarea -->
+  자기소개:<br>
+  <textarea name="intro" rows="4" cols="40"></textarea><br><br>
+
+  <!-- select & option -->
+  좋아하는 과일 선택:
+  <select name="fruit">
+    <option value="apple">사과</option>
+    <option value="banana">바나나</option>
+    <option value="grape">포도</option>
+  </select><br><br>
+
+  <!-- button -->
+  <button type="submit">제출하기</button>
+  <button type="reset">초기화</button>
+</form>
+
+<h2>3. 테이블 태그</h2>
+<table border="1" cellpadding="5">
+  <thead>
+  <tr>
+    <th>이름</th>
+    <th>나이</th>
+    <th>주소</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>홍길동</td>
+    <td>25</td>
+    <td>서울</td>
+  </tr>
+  <tr>
+    <!-- colspan 예시: 주소 2칸 합치기 -->
+    <td>김철수</td>
+    <td colspan="2">부산 (나이+주소 합침)</td>
+  </tr>
+  </tbody>
+</table>
+</body>
+</html>
