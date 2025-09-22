@@ -20,10 +20,24 @@
 주: <input type="week"><br><br>
 
 <h2>🔹 선택 및 범위</h2>
-체크박스: <input type="checkbox"> 동의<br><br>
-라디오:
-<input type="radio" name="gender" value="male"> 남
-<input type="radio" name="gender" value="female"> 여<br><br>
+<h2>✅ 체크박스 (다중 선택 가능)</h2>
+<form>
+    <p>좋아하는 과일을 모두 고르세요:</p>
+    <label><input type="checkbox" name="fruit" value="apple"> 사과</label><br>
+    <label><input type="checkbox" name="fruit" value="banana"> 바나나</label><br>
+    <label><input type="checkbox" name="fruit" value="cherry"> 체리</label><br><br>
+    <button type="submit">체크박스 제출</button>
+</form>
+
+<hr>
+
+<h2>🔘 라디오 (단일 선택만 가능)</h2>
+<form>
+    <p>성별을 선택하세요:</p>
+    <label><input type="radio" name="gender" value="male"> 남성</label><br>
+    <label><input type="radio" name="gender" value="female"> 여성</label><br><br>
+    <button type="submit">라디오 제출</button>
+</form>
 범위(슬라이더): <input type="range" min="0" max="100" step="10"><br><br>
 
 <h2>🔹 파일·기타</h2>
